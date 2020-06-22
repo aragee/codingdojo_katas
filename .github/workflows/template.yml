@@ -30,8 +30,10 @@ jobs:
         # pip install -r requirements.txt
     - name: Test with pytest
       run: |
-        pip install pytest
-        pip install pytest-cov
-        pytest dictionary_replacer_kata.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
-        pytest fizzbuzz_kata.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+        python dictionary_replacer_kata.py
+        python fizzbuzz_kata.py
+        # pip install pytest
+        # pip install pytest-cov
+        # pytest dictionary_replacer_kata.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+        # pytest fizzbuzz_kata.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
 
